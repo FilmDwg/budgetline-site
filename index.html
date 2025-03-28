@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>BudgetLine | Film Budgeting Made Easy</title>
+</head>
+
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="bg-stripes p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" id="logo" class="text-white text-2xl font-bold">BudgetLine</a>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="text-white font-bold hover:text-gray-300" id="home">Home</a></li>
+        <li><a href="privacy-policy.html" class="text-white hover:text-gray-300 hover:font-semibold" id="privacy">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html" class="text-white hover:text-gray-300 hover:font-semibold" id="terms">Terms of Service</a></li>
+        <li><a href="contact-support.html" class="text-white hover:text-gray-300 hover:font-semibold" id="contact">Contact & Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-stripes">
+    <div class="container mx-auto px-6 py-12 lg:flex lg:items-center">
+      <div class="lg:w-full text-center">
+        <div class="flex justify-center mx-auto">
+          <img class="w-1/4 h-auto rounded-lg shadow-lg min-w-[100px]" src="assets/BudgetLine Logo.png"alt="BudgetLine" />
+        </div>
+        <p class="mt-4 text-white text-lg">Take control of your film budgeting with easy-to-use tools. Get started today!</p>
+        <button id="checkoutButton"
+          class="mt-6 px-6 py-3 text-white bg-black rounded-lg hover:bg-blue-700 focus:outline-none">Get BudgetLine Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold text-gray-800">Key Features</h2>
+      <div class="flex justify-center mt-6">
+        <div class="w-1/3 p-4">
+          <h3 class="text-xl font-bold text-black">Easy to Use</h3>
+          <p class="mt-2 text-gray-600">Get started quickly and customize your budget.</p>
+        </div>
+        <div class="w-1/3 p-4">
+          <h3 class="text-xl font-bold text-black">Pre-Built Budget Template</h3>
+          <p class="mt-2 text-gray-600">Get started instantly with a professional film budget layout.</p>
+        </div>
+        <div class="w-1/3 p-4">
+          <h3 class="text-xl font-bold text-black">One-Click Entry Management</h3>
+          <p class="mt-2 text-gray-600">Easily add, edit, and remove budget items without disrupting your workflow.</p>
+        </div>
+      </div>
+      <div class="flex justify-center mt-6">
+        <div class="w-1/3 p-4">
+          <h3 class="text-xl font-bold text-black">Automated Calculations</h3>
+          <p class="mt-2 text-gray-600">Ensure accuracy with real-time cost tracking and percentage-based allocations.</p>
+        </div>
+        <div class="w-1/3 p-4">
+          <h3 class="text-xl font-bold text-black">Secure Payments</h3>
+          <p class="mt-2 text-gray-600">Powered by Stripe with secure transactions.</p>
+        </div>
+        <div class="w-1/3 p-4">
+          <h3 class="text-xl font-bold text-black">Customizable & Scalable</h3>
+          <p class="mt-2 text-gray-600">Adapt BudgetLine to suit projects of any size and complexity.</p>
+        </div>
+      </div>
+      <div class="flex justify-center mt-6">
+        <div class="w-full max-w-xs text-center p-4">
+          <h3 class="text-xl font-bold text-black">Designed by Filmmakers for Filmmakers</h3>
+          <div class="mt-4 -mb-10">
+            <stripe-buy-button 
+              buy-button-id="buy_btn_1R6smdKCC2Js4DKrrkCp7CvN"
+              publishable-key="pk_live_51R2E2qKCC2Js4DKrDgajtCHlGtmx2p7I3TpOlZf7AOuwzj7wlnXczOJyY9hrjnmTtPeYuUxUog9HGuTK2APzob8W00tX1vpsa2">
+            </stripe-buy-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold text-gray-800">BudgetLine</h2>
+      <p class="mt-2 mb-2 text-gray-600">Designed specifically for Google Sheets, BudgetLine integrates seamlessly into your existing workflow, allowing you to focus on creativity while keeping financials in check.</p>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/Screenshot 1.png" alt="Screenshot 1"
+              class="w-full h-auto rounded-lg shadow-lg cursor-pointer screenshot" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/Screenshot 2.png" alt="Screenshot 2"
+              class="w-full h-auto rounded-lg shadow-lg cursor-pointer screenshot" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/Screenshot 3.png" alt="Screenshot 3"
+              class="w-full h-auto rounded-lg shadow-lg cursor-pointer screenshot" />
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      
+      <p class="mt-2 mb-2 text-gray-600">BudgetLine is a powerful Google Sheets add-on designed for filmmakers,
+        producers, and production managers to streamline budgeting for any film project. Whether you're working on a
+        short film, feature, documentary, or commercial, BudgetLine provides an intuitive budget template and
+        easy-to-use controls to help you structure and manage your production finances efficiently.</p>
+      <p class="mt-2 mb-2 text-black font-bold">Take control of your film budget today with BudgetLine!</p>
+      <div class="mt-8">
+        <stripe-buy-button
+           buy-button-id="buy_btn_1R6smdKCC2Js4DKrrkCp7CvN"
+          publishable-key="pk_live_51R2E2qKCC2Js4DKrDgajtCHlGtmx2p7I3TpOlZf7AOuwzj7wlnXczOJyY9hrjnmTtPeYuUxUog9HGuTK2APzob8W00tX1vpsa2">
+        </stripe-buy-button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-400">© 2025 BudgetLine. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/plain-modal@1.0.34/plain-modal.min.js" defer></script>
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

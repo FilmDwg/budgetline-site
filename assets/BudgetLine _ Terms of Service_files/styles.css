@@ -1,0 +1,52 @@
+   .bg-stripes {
+       background: repeating-linear-gradient(90deg,
+               rgba(45, 55, 72, 0.75),
+               rgba(45, 55, 72, 0.75) 20px,
+               rgba(74, 85, 104, 0.75) 20px,
+               rgba(74, 85, 104, 0.75) 40px);
+   }
+
+   /* Swiper start */
+   .swiper-button-next,
+   .swiper-button-prev {
+       color: #000000 !important;
+   }
+
+   .swiper-pagination-bullet-active {
+       background: #000000 !important;
+   }
+
+   .modal-swiper img {
+       width: auto;
+       max-width: 100%;
+       max-height: 90%;
+       margin: auto;
+   }
+   /* Swiper End */
+
+   /* Modal Start */
+   #modal-container {
+       display: none;
+   }
+
+   #modal-content {
+       width: 80vw;
+       height: 80vh;
+       background: #fff;
+       overflow: hidden;
+   }
+
+   #modal-close {
+       z-index: 9999;
+   }
+
+   .plainmodal .plainmodal-overlay {
+       background-color: rgba(0, 0, 0, 0.5);
+   }
+
+   .plainoverlay.plainoverlay-doc {
+       left: 0;
+       top: 0;
+       padding: 0;
+   }
+   /* Modal End */
